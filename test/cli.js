@@ -102,7 +102,7 @@ describe("CLI", function() {
         sinon.spy(CLI.prototype, "runSend");
 
         const cli = new CLI();
-        const params = "{'test': 'test'}";
+        const params = '{"test":"test"}';
 
         cli.readInput(`/send ${params}`);
         cli.interface.close();
